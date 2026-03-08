@@ -3,6 +3,10 @@
 A cybersecurity education tool that shows how convincing a phishing attack can look.  
 Built by [Austin Frankel](https://linkedin.com/in/austin-frankel).
 
+![Home page — enter any app name or URL to begin](public/screenshot.png)
+
+![The sign-in flow — pixel-perfect replica of Google's actual UI](public/screenshot-signin.png)
+
 ---
 
 ## What Is This?
