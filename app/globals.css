@@ -1,0 +1,45 @@
+:root {
+  --google-blue: #1a73e8;
+  --google-blue-hover: #1765cc;
+  --error-red: #d93025;
+  --border-default: #dadce0;
+  --border-hover: #80868b;
+  --text-primary: #202124;
+  --text-secondary: #5f6368;
+  --text-link: #1a73e8;
+  --page-bg: #f1f3f4;
+  --card-bg: #ffffff;
+  --divider: #e0e0e0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  color: var(--text-primary);
+  background: var(--page-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--text-link);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}

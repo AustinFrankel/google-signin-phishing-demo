@@ -1,0 +1,73 @@
+.userChip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.personIcon {
+  flex-shrink: 0;
+}
+
+.email {
+  font-size: 14px;
+  color: #202124;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chooseLabel {
+  font-size: 16px;
+  color: #202124;
+  margin: 0 0 4px 0;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.optionsList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  transition: background 0.1s;
+  border-radius: 0;
+}
+
+.option:hover .optionLabel {
+  color: #1a73e8;
+}
+
+.optionIcon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.optionLabel {
+  font-size: 16px;
+  color: #202124;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  transition: color 0.1s;
+}
+
+.optionDivider {
+  height: 1px;
+  background: #e8eaed;
+  width: 100%;
+}
+

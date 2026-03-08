@@ -1,0 +1,18 @@
+.outer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(450px, 100%);
+}
+
+.outerWide {
+  width: min(100%, clamp(448px, 74vw, 872px));
+}
+
+@media (max-width: 480px) {
+  .outer,
+  .outerWide {
+    width: 100%;
+  }
+}

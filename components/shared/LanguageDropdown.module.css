@@ -1,0 +1,99 @@
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  font-size: 12px;
+  color: #5f6368;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+
+.trigger:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.triggerOpen {
+  border: 1px solid #1a73e8;
+  color: #1a73e8;
+  border-radius: 4px;
+  padding: 5px 11px;
+}
+
+.arrow {
+  color: currentColor;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+}
+
+/* Popover that appears ABOVE the trigger */
+.popover {
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px 2px rgba(60, 64, 67, 0.15), 0 1px 2px 0 rgba(60, 64, 67, 0.3);
+  z-index: 200;
+  min-width: 220px;
+  max-height: 360px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  overflow-y: auto;
+  padding: 8px 0;
+  overscroll-behavior: contain;
+}
+
+.list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background: #dadce0;
+  border-radius: 4px;
+}
+
+.langOption {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 12px 24px;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #202124;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background 0.1s;
+  white-space: nowrap;
+}
+
+.langOption:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.langOptionSelected {
+  color: #1a73e8;
+  background: #e8f0fe;
+}
+
+.langOptionSelected:hover {
+  background: #d2e3fc;
+}

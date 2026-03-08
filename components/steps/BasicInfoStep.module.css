@@ -1,0 +1,33 @@
+.birthdayRow {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.monthField {
+  flex: 0 0 140px;
+}
+
+.dayField {
+  flex: 0 0 70px;
+}
+
+.yearField {
+  flex: 0 0 100px;
+}
+
+.genderRow {
+  margin-top: 16px;
+}
+
+.whyLink {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.whyLink:hover {
+  text-decoration: underline;
+}

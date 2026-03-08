@@ -1,0 +1,98 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.select {
+  width: 100%;
+  height: 56px;
+  padding: 14px 36px 0 14px;
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: inherit;
+  color: transparent; /* hide text when not floating yet */
+  background: transparent;
+  outline: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  transition: border-color 0.1s;
+}
+
+.select:hover {
+  border-color: var(--border-hover);
+}
+
+.selectFloating {
+  color: var(--text-primary);
+  padding-top: 22px;
+  padding-bottom: 8px;
+}
+
+.focused .select {
+  border: 2px solid var(--google-blue);
+  padding-left: 13px;
+  padding-right: 35px;
+}
+
+.hasError .select {
+  border: 2px solid var(--error-red);
+  padding-left: 13px;
+  padding-right: 35px;
+}
+
+.label {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: var(--text-secondary);
+  pointer-events: none;
+  transition: transform 0.15s ease, font-size 0.15s ease, color 0.15s ease, top 0.15s ease;
+  transform-origin: left center;
+  background: transparent;
+  padding: 0 2px;
+  white-space: nowrap;
+}
+
+.labelFloating {
+  top: 0;
+  transform: translateY(-50%) scale(0.75);
+  background: white;
+  padding: 0 4px;
+  left: 10px;
+}
+
+.labelFocused {
+  color: var(--google-blue);
+}
+
+.labelError {
+  color: var(--error-red);
+}
+
+.hasError .labelFloating {
+  color: var(--error-red);
+}
+
+.arrow {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+}
+
+.arrowFocused {
+  color: var(--google-blue);
+}
+
+.arrowError {
+  color: var(--error-red);
+}

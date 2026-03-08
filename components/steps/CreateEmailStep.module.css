@@ -1,0 +1,81 @@
+.radioList {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #e0e0e0;
+}
+
+.radioItem {
+  display: flex;
+  align-items: center;
+  padding: 14px 0;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.radioItemDivider {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Hide native radio */
+.radioInput {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+/* Custom radio circle */
+.radioCircle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #dadce0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 16px;
+  transition: border-color 0.15s;
+  box-sizing: border-box;
+}
+
+.radioSelected {
+  border-color: #1a73e8;
+}
+
+.radioError {
+  border-color: #d93025;
+}
+
+.radioDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #1a73e8;
+}
+
+.radioLabel {
+  font-size: 16px;
+  color: #202124;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.gmailSuffix {
+  font-size: 14px;
+  color: #5f6368;
+  margin-left: 4px;
+}
+
+.useExistingLink {
+  font-size: 14px;
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.useExistingLink:hover {
+  text-decoration: underline;
+}
